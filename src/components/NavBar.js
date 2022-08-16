@@ -10,12 +10,14 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { createTheme } from "@mui/material/styles";
+import Avatar from "@mui/material/Avatar";
+import Stack from "@mui/material/Stack";
+import profileImg from "../images/profile.jpg";
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
+const navItems = ["About Me", "Experience", "Completed Projects", "Contact Me"];
 
 //the color theme used fro the navbar
 const theme = createTheme({
@@ -36,9 +38,9 @@ export const NavBar = (props) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
-      </Typography>
+      <Stack sx={{ alignItems: "center" }}>
+        <Avatar alt="Alexandru Tanase" src={profileImg} sx={{ width: 70, height: 70 }} />
+      </Stack>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -57,7 +59,7 @@ export const NavBar = (props) => {
   return (
     <Box sx={{ display: "flex" }}>
       <AppBar component="nav" theme={theme}>
-        <Toolbar>
+        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -67,13 +69,10 @@ export const NavBar = (props) => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          >
-            MUI
-          </Typography>
+          <Stack direction="row" sx={{ display: { xs: "none", sm: "flex" } }}>
+            <Avatar alt="Alexandru Tanase" src={profileImg} sx={{ width: 90, height: 90 }} />
+            <h2>something</h2>
+          </Stack>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: "#fff" }}>
