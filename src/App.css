@@ -16,7 +16,6 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -26,6 +25,14 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.about-me-description {
+  font-size: 1rem;
+  line-height: 26pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {

@@ -71,7 +71,9 @@ export const NavBar = (props) => {
           </IconButton>
           <Stack direction="row" sx={{ display: { xs: "none", sm: "flex" } }}>
             <Avatar alt="Alexandru Tanase" src={profileImg} sx={{ width: 90, height: 90 }} />
-            <h2>something</h2>
+            <Stack sx={{ paddingLeft: 2 }}>
+              <h2>Alexandru Tanase</h2>
+            </Stack>
           </Stack>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
