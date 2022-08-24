@@ -1,6 +1,16 @@
 import { Grid } from "@mui/material";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
 const projectArr = [
+  {
+    title: "Project 1",
+    imageLink: "https://via.placeholder.com/350x150",
+  },
   {
     title: "Project 1",
     imageLink: "https://via.placeholder.com/350x150",
@@ -51,49 +61,32 @@ export const Projects = () => {
   return (
     <Grid container spacing={2}>
       {projectArr.map((p, i) => {
-        if (i == 0) {
-          return (
-            <Grid item xs={12} sx={{ border: "2px black solid" }}>
-              <p>{p.title}</p>
-              <img src={p.imageLink} />
-            </Grid>
-          );
-        } else {
-          return (
-            <Grid item xs sx={{ border: "2px black solid" }}>
-              <p>{p.title}</p>
-              <img src={p.imageLink} />
-            </Grid>
-          );
-        }
+        return (
+          <Grid item key={p.title} xs sx={{ border: "2px black solid" }}>
+            <Card sx={{ minWidth: 350 }}>
+              <CardMedia
+                component="img"
+                height="140"
+                image="/static/images/cards/contemplative-reptile.jpg"
+                alt="green iguana"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Lizard
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Lizards are a widespread group of squamate reptiles, with over 6,000 species,
+                  ranging across all continents except Antarctica
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+          </Grid>
+        );
       })}
     </Grid>
-
-    // <Grid container spacing={2}>
-    //   <Grid item xs={12} sx={{ border: "2px black solid" }}>
-    //     <p>(2014-2015) Quality Engineer</p>
-    //   </Grid>
-    //   <Grid item xs sx={{ border: "2px black solid" }}>
-    //     <p>(2015-2018) Quality Inspector</p>
-    //   </Grid>
-    //   <Grid item xs sx={{ border: "2px black solid" }}>
-    //     <p>(2018-2021) Test Engineer</p>
-    //   </Grid>
-    //   <Grid item xs sx={{ border: "2px black solid" }}>
-    //     <p>(Current role) Robotic Process Automation Developer</p>
-    //   </Grid>
-    //   <Grid item xs sx={{ border: "2px black solid" }}>
-    //     <p>(Current role) Robotic Process Automation Developer</p>
-    //   </Grid>
-    //   <Grid item xs sx={{ border: "2px black solid" }}>
-    //     <p>(Current role) Robotic Process Automation Developer</p>
-    //   </Grid>
-    //   <Grid item xs sx={{ border: "2px black solid" }}>
-    //     <p>(Current role) Robotic Process Automation Developer</p>
-    //   </Grid>
-    //   {/* <Grid item xs={3} sx={{ border: "2px black solid" }}>
-    //     <p>(Current role) Robotic Process Automation Developer</p>
-    //   </Grid> */}
-    // </Grid>
   );
 };

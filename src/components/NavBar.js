@@ -17,7 +17,12 @@ import Stack from "@mui/material/Stack";
 import profileImg from "../images/profile.jpg";
 
 const drawerWidth = 240;
-const navItems = ["About Me", "Experience", "Completed Projects", "Contact Me"];
+const navItems = [
+  { key: "aboutMe", label: "About Me" },
+  { key: "experience", label: "Experience" },
+  { key: "projects", label: "Completed Projects" },
+  { key: "contactForm", label: "Contact Me" },
+];
 
 //the color theme used fro the navbar
 const theme = createTheme({
@@ -44,9 +49,14 @@ export const NavBar = (props) => {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+          <ListItem key={item.key} disablePadding>
+            <ListItemButton
+              sx={{ textAlign: "center" }}
+              onClick={() => {
+                props.setCurrentPage(item.key);
+              }}
+            >
+              <ListItemText primary={item.label} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -77,8 +87,14 @@ export const NavBar = (props) => {
           </Stack>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
+              <Button
+                key={item.key}
+                sx={{ color: "#fff" }}
+                onClick={() => {
+                  props.setCurrentPage(item.key);
+                }}
+              >
+                {item.label}
               </Button>
             ))}
           </Box>
