@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.b6e6041d.css",
+    "main.js": "/portfolio/static/js/main.e5fc8805.js",
+    "static/media/Alexandru-Tanase-CV.pdf": "/portfolio/static/media/Alexandru-Tanase-CV.f2a88e4ccde03bc4c4b1.pdf",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.8b3222c9c86304cbab55.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.b6e6041d.css.map": "/portfolio/static/css/main.b6e6041d.css.map",
+    "main.e5fc8805.js.map": "/portfolio/static/js/main.e5fc8805.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6e6041d.css",
+    "static/js/main.e5fc8805.js"
+  ]
+}
