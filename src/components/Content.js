@@ -7,7 +7,7 @@ import { ContactForm } from "./ContactForm";
 
 export const Content = ({ currentPage }) => {
   return (
-    <Stack spacing={2} sx={{ marginTop: "90px", marginBottom: "101px" }}>
+    <Stack spacing={2} sx={{ marginTop: "90px", marginBottom: "101px", alignItems: "center" }}>
       {currentPage === "projects" && <Projects />}
       {currentPage === "experience" && <Experience />}
       {currentPage === "aboutMe" && <AboutMe />}

@@ -11,15 +11,7 @@ export const ContactForm = () => {
     mode: "onBlur",
   });
   return (
-    <Grid
-      container
-      component="form"
-      sx={{
-        p: 3,
-        width: "50%",
-      }}
-      spacing={4}
-    >
+    <Grid container component="form" spacing={4} sx={{ marginTop: "10px" }}>
       <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
         <TextField
           required
