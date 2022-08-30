@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b6e6041d.css",
-    "main.js": "/portfolio/static/js/main.57693cd5.js",
+    "main.css": "/portfolio/static/css/main.8c7f510b.css",
+    "main.js": "/portfolio/static/js/main.ccccf5d3.js",
     "static/media/Alexandru-Tanase-CV.pdf": "/portfolio/static/media/Alexandru-Tanase-CV.f2a88e4ccde03bc4c4b1.pdf",
     "static/media/event.png": "/portfolio/static/media/event.ce4e8a459bf4dbd40370.png",
     "static/media/profile.jpg": "/portfolio/static/media/profile.8b3222c9c86304cbab55.jpg",
@@ -9,11 +9,11 @@
     "static/media/project.png": "/portfolio/static/media/project.0d0d8ff689849d3d367c.png",
     "static/media/note.png": "/portfolio/static/media/note.70325cede8f3ec27e9f1.png",
     "index.html": "/portfolio/index.html",
-    "main.b6e6041d.css.map": "/portfolio/static/css/main.b6e6041d.css.map",
-    "main.57693cd5.js.map": "/portfolio/static/js/main.57693cd5.js.map"
+    "main.8c7f510b.css.map": "/portfolio/static/css/main.8c7f510b.css.map",
+    "main.ccccf5d3.js.map": "/portfolio/static/js/main.ccccf5d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6e6041d.css",
-    "static/js/main.57693cd5.js"
+    "static/css/main.8c7f510b.css",
+    "static/js/main.ccccf5d3.js"
   ]
 }
